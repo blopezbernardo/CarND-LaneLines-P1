@@ -1,9 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Finding Lane Lines on the Road**
@@ -30,11 +26,16 @@ The goals / steps of this project are the following:
 
 ---
 
-### Reflection
+## Reflection
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I appllied a gaussian smoothing function with kernel 5. Afterwards I applied the canny edges with thresholds 50 an 150. Then I defined the region of interest of a trapezoid. 
+My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I appllied a gaussian smoothing function with kernel 5. 
+
+Afterwards I applied the canny edges with thresholds 50 an 150. 
+
+Next I defined the region of interest of a trapezoid with vertex . 
+
 After that I applied the hough function wiht the same parametres from the lessons. The last step is to combine the the lines obtained in the original image.
 
 Theses are the segments identified:
@@ -68,4 +69,5 @@ Other issues are that the canny edge identifies as lines things that aren't line
 
 A possible improvement would be to narrow even more the region of interest but that would not be feasible because drivers dont drive in the middle of the road exactly, they can change lanes, etc. 
 
-Another potential improvement could be to compare both lines and stablish that the slope cannot be very different between them. Or compare previous frame and stablish the maximum increment between them (they shouldn't be very diffirent between each other).
+Another potential improvement could be to compare both slopes in the lines and stablish that the slope cannot be very different between them. 
+In that same direction, we could compare previous frame and stablish the maximum increment between the lines: the frames shouldn't be very different between each other, so we should expect the small differences in the lines.
