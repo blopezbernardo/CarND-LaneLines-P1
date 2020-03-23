@@ -16,6 +16,12 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
+[image2]: ./output_images/Lines_solidWhiteRight.jpg
+[image3]: ./output_images/Lines_solidWhiteCurve.jpg'
+[image4]: ./output_images/Lines_solidYellowCurve2.jpg
+[image5]: ./output_images/Lines_solidYellowLeft.jpg
+[image6]: ./output_images/Lines_whiteCarLaneSwitch.jpg
+[image7]: ./output_images/Lines_solidYellowCurve.jpg
 
 ---
 
@@ -29,13 +35,13 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-[image2]: ./output_images/Lines_solidWhiteRight.jpg
-[image3]: ./output_images/Lines_solidWhiteCurve.jpg'
-[image4]: ./output_images/Lines_solidYellowCurve2.jpg
-[image5]: ./output_images/Lines_solidYellowLeft.jpg
-[image6]: ./output_images/Lines_whiteCarLaneSwitch.jpg
-[image7]: ./output_images/Lines_solidYellowCurve.jpg
 
+![alt text][image2]
+![alt text][image3]
+![alt text][image4]
+![alt text][image5]
+![alt text][image6]
+![alt text][image7]
 
 ### 2. Identify potential shortcomings with your current pipeline
 
