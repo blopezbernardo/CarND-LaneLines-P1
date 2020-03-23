@@ -15,13 +15,18 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
-[image2]: ./output_images/Lines_solidWhiteRight.jpg
-[image3]: ./output_images/Lines_solidWhiteCurve.jpg'
-[image4]: ./output_images/Lines_solidYellowCurve2.jpg
-[image5]: ./output_images/Lines_solidYellowLeft.jpg
-[image6]: ./output_images/Lines_whiteCarLaneSwitch.jpg
-[image7]: ./output_images/Lines_solidYellowCurve.jpg
+[image1]: ./output_images/Segment_solidWhiteRight.jpg
+[image2]: ./output_images/Segment_solidWhiteCurve.jpg
+[image3]: ./output_images/Segment_solidYellowCurve2.jpg
+[image4]: ./output_images/Segment_solidYellowLeft.jpg
+[image5]: ./output_images/Segment_whiteCarLaneSwitch.jpg
+[image6]: ./output_images/Segment_solidYellowCurve.jpg
+[image7]: ./output_images/Lines_solidWhiteRight.jpg
+[image8]: ./output_images/Lines_solidWhiteCurve.jpg
+[image9]: ./output_images/Lines_solidYellowCurve2.jpg
+[image10]: ./output_images/Lines_solidYellowLeft.jpg
+[image11]: ./output_images/Lines_whiteCarLaneSwitch.jpg
+[image12]: ./output_images/Lines_solidYellowCurve.jpg
 
 ---
 
@@ -31,24 +36,28 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I appllied a gaussian smoothing function with kernel 5. Afterwards I applied the canny edges with thresholds 60 an 185. Then I defined the region of interest of a trapezoid. 
 After that I applied the hough function wiht the same parametres from the lessons. The last step is to combine the the lines obtained in the original image.
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by doing the average of all the slopes, getting the highest point and drawing the line to the bottom point.
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+Theses are the segments identified:
 
-
+![alt text][image1]
 ![alt text][image2]
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
 ![alt text][image6]
+
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by doing the average of all the slopes, getting the highest point and drawing the line to the bottom point.
+
 ![alt text][image7]
+![alt text][image8]
+![alt text][image9]
+![alt text][image10]
+![alt text][image11]
+![alt text][image12]
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+My 
 
 
 ### 3. Suggest possible improvements to your pipeline
