@@ -34,7 +34,7 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I appllied a gaussian smoothing function with kernel 5. Afterwards I applied the canny edges with thresholds 60 an 185. Then I defined the region of interest of a trapezoid. 
+My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I appllied a gaussian smoothing function with kernel 5. Afterwards I applied the canny edges with thresholds 50 an 150. Then I defined the region of interest of a trapezoid. 
 After that I applied the hough function wiht the same parametres from the lessons. The last step is to combine the the lines obtained in the original image.
 
 Theses are the segments identified:
@@ -46,7 +46,7 @@ Theses are the segments identified:
 ![alt text][image5]
 ![alt text][image6]
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by doing the average of all the slopes, getting the highest point and drawing the line to the bottom point.
+In order to draw a single line on the left and right lanes, I did the average of all the slopes, getting the highest point and drawing the line to the bottom point.
 
 ![alt text][image7]
 ![alt text][image8]
@@ -59,7 +59,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 My video is shaky because the identification of the segments is not accurate. As it can be seen in the following image the upper segments are not identified, thus the lack of accuracy. 
 
-![alt text][image6]
+![alt text][image5]
 
 
 ### 3. Suggest possible improvements to your pipeline
