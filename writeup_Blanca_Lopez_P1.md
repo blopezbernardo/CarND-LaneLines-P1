@@ -57,13 +57,15 @@ In order to draw a single line on the left and right lanes, I did the average of
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-My video is shaky because the identification of the segments is not accurate. As it can be seen in the following image the upper segments are not identified, thus the lack of accuracy. 
+My video is shaky. One of the reasons is because the line drawing is based on a principle that both sides of the line are identified by the canny edge, which it doesnt always happen as seen here:
 
 ![alt text][image5]
+It can be seen in this image that the left line, at the bottom part, the left edge is missing.
 
+Other issues are that the canny edge identifies as lines things that aren't lines as it can be seen in the 'yellow output' video.
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to narrow even more the region of interest but that would not be feasible because drivers dont drive in the middle of the road exactly, they can change lanes, etc. 
 
-Another potential improvement could be to ...
+Another potential improvement could be to compare both lines and stablish that the slope cannot be very different between them. Or compare previous frame and stablish the maximum increment between them (they shouldn't be very diffirent between each other).
