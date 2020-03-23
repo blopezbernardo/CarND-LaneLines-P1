@@ -57,7 +57,9 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-My 
+My video is shaky because the identification of the segments is not accurate. As it can be seen in the following image the upper segments are not identified, thus the lack of accuracy. 
+
+![alt text][image6]
 
 
 ### 3. Suggest possible improvements to your pipeline
